@@ -1,0 +1,1742 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: fixed;
+    overflow: auto;
+    font-size: 20px;
+    z-index: 8;
+}
+.logoo{
+    width: 100px;
+    height: 50px;
+    margin-left: 150px;
+    border-radius: 15px;
+}
+.header ul{
+    list-style: none;
+    float: right;
+}
+.header ul li{
+    display: inline-block;
+    margin: 10px 50px ;
+    color: whitesmoke;
+}
+.header ul a{
+    text-decoration: none;
+    color: black;
+}
+.header ul a:hover{
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.header ul .space1{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-left: 10px;
+    border-bottom: 3px solid black;
+}
+.header ul .space{
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin-left: 10px;
+    border-bottom: 3px solid black;
+    opacity: 0;
+}
+.header ul .space:hover{
+    opacity: 1;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.content{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../photos/wallpaper3.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+}
+.container{
+    width: 60%;
+    height: 60%;
+    background-color:rgba(255, 255,255, 0.2);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+}
+.container .title1{
+    margin-top: 70px;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color: white;
+}
+.container .p1{
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+.container button{
+    margin-top: 40px;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+.container .but1{
+    background-color: white;
+    color: black;
+}
+.container .but2{
+    background-color: black;
+    color: whitesmoke;
+}
+.container .but1:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.container .but2:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+/* /////////////////////////////////////////////////////////////// */
+.whitespace{
+    width: 100%;
+    height: 200px;
+}
+/* /////////////////////////////////////////////////////////////////// */
+/* section website */
+.website{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.websitebigtitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.website .line{
+    width: 200px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+}
+/* part 1 */
+.website .websitepart1{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    float: left;
+    background-color:rgba(128, 128, 128, 0.1);
+    margin: 100px 0 0 130px;
+}
+.website .websitepart1 ::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .3s;
+}
+.website .websitepart1 :hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.website .websitepart1 i{
+    font-size: 40px;
+    color: gold;
+    margin-top: 30px;
+}
+.website .websitepart1 .websiteh3{
+    font-weight: bold;
+    color: brown;
+    margin-top: 20px;
+    margin-bottom: 20;
+}
+.website .websitepart1 .websitep{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+/* part 2 */
+.website .websitepart2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    float: left;
+    background-color:rgba(192, 192, 192, 0.2);
+    margin: 100px 0 0 520px;
+}
+.website .websitepart2 i{
+    font-size: 40px;
+    color: gold;
+    margin-top: 30px;
+}
+.website .websitepart2 .websiteh3{
+    font-weight: bold;
+    color: brown;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.website .websitepart2 .websitep{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.website .websitepart2 ::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s;
+}
+.website .websitepart2 :hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+/* part 3 */
+.website .websitepart3{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    float: left;
+    background-color:rgba(192, 192, 192, 0.2);
+    margin: 100px 0 0 900px;
+}
+.website .websitepart3 i{
+    font-size: 40px;
+    color: gray;
+    margin-top: 30px;
+}
+.website .websitepart3 ii{
+    font-size: 40px;
+    color: gray;
+    margin-top: 30px;
+}
+.website .websitepart3 .websiteh3{
+    font-weight: bold;
+    color: brown;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.website .websitepart3 .websitep{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.website .websitepart3 ::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s;
+}
+.website .websitepart3 :hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+/* /////////////////////////////////////////////////////////////////// */
+/* section 1 div 1 */
+.secton1{
+    width: 100%;
+    height: 100vh;
+}
+.secton1bigtitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.secton1 .line{
+    width: 350px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+}
+.secton1 .div1{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.2);
+    float: left;
+    margin: 50px 50px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.secton1 .div1::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    opacity: 0;
+}
+.secton1 .div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.secton1 .secton1title{
+    color: black;
+    font-size: 25px;
+}
+.secton1 .img1{
+    width: 90%;
+    height: 60%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.secton1 .secton1title:hover{
+    color: red;
+}
+/* section1 div2 */
+.secton1 .div2{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.2);
+    float: left;
+    margin: 50px 50px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.secton1 .div2::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    opacity: 0;
+}
+.secton1 .div2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.secton1 .secton1title{
+    color: black;
+    font-size: 25px;
+}
+.secton1 .img1{
+    width: 90%;
+    height: 60%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.secton1 .secton1title:hover{
+    color: red;
+}
+/* section1 div3 */
+.secton1 .div3{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.2);
+    float: left;
+    margin: 50px 50px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.secton1 .div3::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    opacity: 0;
+}
+.secton1 .div3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.secton1 .secton1title{
+    color: black;
+    font-size: 25px;
+}
+.secton1 .img1{
+    width: 90%;
+    height: 60%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.secton1 .secton1title:hover{
+    color: red;
+}
+/* ///////////////////////////////////////////////////////////////////// */
+/* section2 div1*/
+.section2{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.titlesection1{
+    text-align: center;
+}
+.section2 .line{
+    width: 150px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+}
+.section2div1{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 50px 30px;
+    position: relative;
+    z-index: 2;
+}
+.section2img1{
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+.section2div1::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.section2div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team_overlay{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+.section2div1:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+} 
+/* section2 div2 */
+.section2div2{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 50px 0px;
+    position: relative;
+    z-index: 2;
+}
+.section2img2{
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+.section2div2::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.section2div2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team_overlay{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+.section2div2:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+} 
+/* setion2 div3 */
+.section2div3{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 50px 30px;
+    position: relative;
+    z-index: 2;
+}
+.section2img3{
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+.section2div3::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.section2div3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team_overlay{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+.section2div3:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+} 
+/* section2 div4 */
+.section2div4{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 50px 30px;
+    position: relative;
+    z-index: 2;
+}
+.section2img4{
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+.section2div4::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.section2div4:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team_overlay{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+.section2div4:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+/* section2 div5 */
+.section2div5{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 50px 0px;
+    position: relative;
+    z-index: 2;
+}
+.section2img5{
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+.section2div5::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.section2div5:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team_overlay{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+.section2div5:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+/* section2 div6 */
+.section2div6{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 50px 30px;
+    position: relative;
+    z-index: 2;
+}
+.section2img6{
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+.section2div6::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.section2div6:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team_overlay{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: 3;
+}
+.section2div6:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+/* /////////////////////////////////////////////////////////// */
+/* section3 */
+.section3{
+    width: 100%;
+    height: 80vh;
+}
+.section3 .contaner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.section3 .contaner .firsthave{
+    width: 50%;
+    height: 80%;
+    float: left;
+} 
+.section3 .contaner .firsthave .firsthavetitle{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.section3 .contaner .firsthave .line{
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    background-color: black;
+}
+.section3 .contaner .firsthave .firsthavep{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.section3 .contaner .firsthave ul{
+    margin-top: 20px;
+}
+.section3 .contaner .firsthave ul i{
+    color: gray;
+    font-size: 20px;
+}
+.section3 .contaner .secondhave{
+    float: right;
+    width: 50%;
+    height: 80%;
+}
+.section3 .contaner .secondhave img{
+    width: 80%;
+    height: 80%;
+}
+.section3 .contaner .secondhave ul{
+    list-style: circle;
+    font-size: large;
+}
+.section3 .contaner .secondhave ul li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: gray;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.section3 .contaner .secondhave ul .active{
+    background-color: blue;
+}
+.section3 .contaner .secondhave ul li:hover{
+    background-color: blue;
+}
+/* //////////////////////////////////////////////////////////// */
+/* section4 */
+.section4{
+    width: 100%;
+    height: 400px;
+    background-image: url(../photos/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+.section4 .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.section4 .section4container{
+    width: 100%;
+    height: 50%;
+}
+.section4 .section4container .item1{
+    margin-top: 170px;
+    margin-left: 200px;
+    font-size: large;
+    color: whitesmoke;
+    float: left;
+}
+.section4 .section4container .item1 .i{
+    color: gold;
+    font-size: larger;
+}
+/* //////////////////////////////////////////////////////////// */
+/* section5 */
+.section5{
+    width: 100%;
+    height: 80vh;
+}
+.section5 .contaner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.section5 .contaner .firsthave{
+    width: 50%;
+    height: 80%;
+    float: right;
+} 
+.section5 .contaner .firsthave .firsthavetitle{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.section5 .contaner .firsthave .line{
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    background-color: black;
+}
+.section5 .contaner .firsthave .firsthavep{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.section5 .contaner .firsthave ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.section5 .contaner .firsthave ul i{
+    color: gray;
+    font-size: 20px;
+}
+.section5 .contaner .secondhave{
+    float: left;
+    width: 50%;
+    height: 80%;
+}
+.section5 .contaner .secondhave img{
+    width: 80%;
+    height: 80%;
+}
+.section5 .contaner .secondhave ul{
+    list-style: circle;
+    font-size: large;
+}
+.section5 .contaner .secondhave ul li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: gray;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.section5 .contaner .secondhave ul .active{
+    background-color: blue;
+}
+.section5 .contaner .secondhave ul li:hover{
+    background-color: blue;
+}
+/* ////////////////////////////////////////////////////////////// */
+/* section6 */
+.section6{
+    width: 100%;
+    height: 400px;
+    background-image: url(../photos/wallpaper2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+.section6 .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.section6 .section6container{
+    width: 100%;
+    height: 80%;
+}
+.section6 .section6container .section6part1 {
+    float: left;
+}
+.section6 .section6container .section6part1 .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: 100px;
+    float: left;
+}
+.section6 .section6container .section6part1 h3{
+    color: whitesmoke;
+    margin-left: 300px;
+}
+.section6 .section6container .section6part1 p{
+    color: whitesmoke;
+    margin-left: 300px;
+}
+.section6 .section6container .section6part2 {
+    float: right;
+}
+.section6 .section6container .section6part2 .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 300px;
+    margin-top: 100px;
+}
+.section6 .section6container .section6part2 h3{
+    color: whitesmoke;
+    margin-right: 300px;
+}
+.section6 .section6container .section6part2 p{
+    color: whitesmoke;
+    margin-right: 300px;
+}
+/* ////////////////////////////////////////////////////////// */
+/* new collection */
+.newcollection{
+    width: 100%;
+    height: 100vh;
+}
+.newcollection .title{
+    text-align: center;
+    text-transform: capitalize;
+}
+.newcollection .line{
+    width: 150px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+/* part1 */
+.newcollection .part1{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:  left;
+    position: relative;
+    border: black solid .1px;
+}
+.newcollection .part1 .i{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part1 .h3{
+    display: block;
+    color: palevioletred;
+    margin: 30px 0px 20px 50px;
+    font-weight: bold;
+}
+.newcollection .part1 .p{
+    margin-left: 50px;
+}
+.newcollection .part1::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-image: url(../photos/rings.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: .3s;
+}
+.newcollection .part1:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* part2 */
+.newcollection .part2{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:  left;
+    position: relative;
+    border: black solid .1px;
+}
+.newcollection .part2 .i{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part2 .h3{
+    display: block;
+    color: palevioletred;
+    margin: 30px 0px 20px 50px;
+    font-weight: bold;
+}
+.newcollection .part2 .p{
+    margin-left: 50px;
+}
+.newcollection .part2::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-image: url(../photos/necklace.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: .3s;
+}
+.newcollection .part2:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* part3 */
+.newcollection .part3{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:  left;
+    position: relative;
+    border: black solid .1px;
+}
+.newcollection .part3 .i{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part3 .ii{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part3 .h3{
+    display: block;
+    color: palevioletred;
+    margin: 30px 0px 20px 50px;
+    font-weight: bold;
+}
+.newcollection .part3 .p{
+    margin-left: 50px;
+}
+.newcollection .part3::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-image: url(../photos/earings.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: .3s;
+}
+.newcollection .part3:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* part4 */
+.newcollection .part4{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:  left;
+    position: relative;
+    border: black solid .1px;
+}
+.newcollection .part4 .i{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part4 .h3{
+    display: block;
+    color: palevioletred;
+    margin: 30px 0px 20px 50px;
+    font-weight: bold;
+}
+.newcollection .part4 .p{
+    margin-left: 50px;
+}
+.newcollection .part4::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-image: url(../photos/bracelet2.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: .3s;
+}
+.newcollection .part4:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* part5 */
+.newcollection .part5{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:  left;
+    position: relative;
+    border: black solid .1px;
+}
+.newcollection .part5 .i{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part5 .h3{
+    display: block;
+    color: palevioletred;
+    margin: 30px 0px 20px 50px;
+    font-weight: bold;
+}
+.newcollection .part5 .p{
+    margin-left: 50px;
+}
+.newcollection .part5::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-image: url(../photos/missl.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: .3s;
+}
+.newcollection .part5:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* part6 */
+.newcollection .part6{
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:  left;
+    position: relative;
+    border: black solid .1px;
+}
+.newcollection .part6 .i{
+    color: gray;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: absolute;
+    font-size: 30px;
+}
+.newcollection .part6 .h3{
+    display: block;
+    color: palevioletred;
+    margin: 30px 0px 20px 50px;
+    font-weight: bold;
+}
+.newcollection .part6 .p{
+    margin-left: 50px;
+}
+.newcollection .part6::after{
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-image: url(../photos/gold_.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: .3s;
+}
+.newcollection .part6:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* ////////////////////////////////////////////////////////// */
+/* prices */
+.prices{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.prices .title{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.prices .line{
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+/*  prices part1 */
+.prices .part1{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin:100px auto;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 255, 42, 0.1);
+    border: .1px solid rgba(128, 128, 128, 0.4) ;
+    border-radius: 10px;
+    position: relative;
+}
+.prices .part1 .plane{
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.prices .part1 .circle{
+    width: 100px;
+    height: 100px;
+    border: solid black .1px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.prices .part1 .circle .h3{
+    margin-top: 25px;
+    font-size: 30px;
+}
+.prices .part1 .p{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.prices .part1 .button{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    text-transform: capitalize;
+}
+.prices .part1::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.1);
+    opacity: 0;
+    transition: .5s;
+}
+.prices .part1:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.prices .part1:hover button{
+    background-color: lightblue;
+}
+.prices .part1:hover .plane{
+    color: blue;
+}
+.prices .part1:hover .p{
+    color: blue;
+}
+/*  prices part2 */
+.prices .part2{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin:100px auto;
+    margin-left: 100px;
+    background-color: white;
+    border: .1px solid rgba(0, 0, 255, 0.1) ;
+    border-radius: 10px;
+    position: relative;
+}
+.prices .part2 .plane{
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.prices .part2 .circle{
+    width: 100px;
+    height: 100px;
+    border: solid black .1px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.prices .part2 .circle .h3{
+    margin-top: 25px;
+    font-size: 30px;
+}
+.prices .part2 .p{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.prices .part2 .button{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    text-transform: capitalize;
+}
+.prices .part2::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.1);
+    opacity: 0;
+    transition: .5s;
+}
+.prices .part2:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.prices .part2:hover button{
+    background-color: lightblue;
+}
+.prices .part2:hover .plane{
+    color: blue;
+}
+.prices .part2:hover .p{
+    color: blue;
+}
+/*  prices part3 */
+.prices .part3{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin:100px auto;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 255, 42, 0.1);
+    border: .1px solid rgba(128, 128, 128, 0.4) ;
+    border-radius: 10px;
+    position: relative;
+}
+.prices .part3 .plane{
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.prices .part3 .circle{
+    width: 100px;
+    height: 100px;
+    border: solid black .1px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.prices .part3 .circle .h3{
+    margin-top: 25px;
+    font-size: 30px;
+}
+.prices .part3 .p{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.prices .part3 .button{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    text-transform: capitalize;
+}
+.prices .part3::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.1);
+    opacity: 0;
+    transition: .5s;
+}
+.prices .part3:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.prices .part3:hover button{
+    background-color: lightblue;
+}
+.prices .part3:hover .plane{
+    color: blue;
+}
+.prices .part3:hover .p{
+    color: blue;
+}
+.spaceee{
+    width: 100%;
+    height: 100px;
+}
+/* //////////////////////////////////////////////////////////////// */
+/* Branches */
+.contain{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+.contain .titlle{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif;
+}
+.contain .line{
+    width: 200px;
+    height: 3px;
+    background-color: black;
+    margin-left: 420px;
+    margin-bottom: 20px;
+}
+.contain .conteent{
+    width: auto;
+}
+.item11{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 18px 14px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px 10px;
+}
+.item22{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.4);
+    padding: 18px 14px;
+    margin-left: 50px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px 10px;
+}
+.item33{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 18px 14px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px 10px;
+}
+.imagee{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.imagee .imageee{
+    width: 100%;
+}
+.social{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.item11:hover .social{
+    visibility: visible;
+    opacity: .5;
+}
+.item22:hover .social{
+    visibility: visible;
+    opacity: .5;
+}
+.item33:hover .social{
+    visibility: visible;
+    opacity: .5;
+}
+.social a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.9);
+    color:beige;
+    margin-left: auto;
+    border-radius: 40px;
+}
+.social a i{
+    line-height: 40px;
+    font-size: 20px;
+}
+.info_title{
+    text-transform: capitalize;
+    color: black;
+    padding: 10px 0px;
+}
+.info_title:hover{
+    color: rgba(255, 0, 0, 0.5);
+}
+.info_p{
+    text-transform: uppercase;
+    color: black;
+}
+.info_p:hover{
+    color: rgba(255, 0, 0, 0.5);
+}
+/* ////////////////////////////////////////////////////////// */
+/* footer */
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(128, 128, 128, 0.8);
+    position: relative; 
+}
+.footer_container{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+}
+.footer .img10{
+    width: 50%;
+    height: 50%;
+    margin-left: 150px;
+    border-radius: 30px;
+}
+.footer .facebook{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    float: left;
+    margin-left: 290px;
+    margin-top: 30px;
+    font-size: 40px;
+    position: relative;
+}
+.footer .facebook a{
+    color: whitesmoke;
+}
+.footer_container .facebook:hover{
+    background-color: whitesmoke;
+}
+.footer_container .facebook:hover a{
+    color: blue;
+}
+.footer .twitter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    float: left;
+    margin-top: 30px;
+    font-size: 40px;
+    position: relative;
+}
+.footer .twitter a{
+    color: whitesmoke;
+}
+.footer_container .twitter:hover{
+    background-color: whitesmoke;
+}
+.footer_container .twitter:hover a{
+    color: blue;
+}
+.footer .instgram{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:blue;
+    float: left;
+    margin-top: 30px;
+    font-size: 40px;
+    position: relative;
+}
+.footer .instgram a{
+    color: whitesmoke;
+}
+.footer_container .instgram:hover{
+    background-color: whitesmoke;
+}
+.footer_container .instgram:hover a{
+    color: blue;
+}
+.footer .linkedin{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    float: left;
+    margin-top: 30px;
+    font-size: 40px;
+    position: relative;
+}
+.footer .linkedin a{
+    color: whitesmoke;
+}
+.footer_container .linkedin:hover{
+    background-color: whitesmoke;
+}
+.footer_container .linkedin:hover a{
+    color: blue;
+}
+.footer .snapchat{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    float: left;
+    margin-top: 30px;
+    font-size: 40px;
+    position: relative;
+}
+.footer .snapchat a{
+    color: whitesmoke;
+}
+.footer_container .snapchat:hover{
+    background-color: whitesmoke;
+}
+.footer_container .snapchat:hover a{
+    color: blue;
+}
+.footer p{
+    color: black;
+    margin-top: 100px;
+    margin-left: 200px;
+}
